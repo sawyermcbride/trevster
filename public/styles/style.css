@@ -1,0 +1,340 @@
+* {
+  font-family: 'Open Sans'; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px; }
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  margin: 0 auto;
+  width: 300px;
+  height: 120px;
+  background: rgba(44, 62, 90, 0.9);
+  border-radius: 9px;
+  z-index: 100;
+  visibility: hidden; }
+  .popup #popupTaskName {
+    text-align: center;
+    color: #ecf0f1; }
+
+nav.main-nav {
+  background: #2ecc71;
+  height: 70px;
+  margin-top: 0px;
+  overflow: visible; }
+  nav.main-nav h1.nav-brand {
+    font-size: 24px;
+    margin-top: 2px;
+    margin-left: 7px;
+    float: left; }
+  nav.main-nav .mobileTodoNumber {
+    display: none; }
+  nav.main-nav .nav-row:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  nav.main-nav div.nav-row:first-of-type {
+    position: relative;
+    z-index: 5; }
+  nav.main-nav div.profile {
+    float: right;
+    cursor: pointer; }
+    nav.main-nav div.profile h3 {
+      font-size: 14px;
+      color: #6e7072;
+      display: inline-block;
+      margin: 5px 5px 0px 4px; }
+    nav.main-nav div.profile .user-icon {
+      font-size: 18px;
+      color: #2c3e50;
+      cursor: pointer; }
+    nav.main-nav div.profile .profile-dropdown {
+      visibility: hidden;
+      position: absolute;
+      right: 2.5%;
+      cursor: pointer; }
+      nav.main-nav div.profile .profile-dropdown #sign-out {
+        cursor: pointer;
+        padding: 2px 12px;
+        display: inline-block;
+        margin-top: 5px;
+        background: #6a7576;
+        opacity: .8;
+        border: 0px;
+        border-radius: 5px; }
+  nav.main-nav .number-todo, nav.main-nav .day, nav.main-nav .search-container {
+    display: inline-block;
+    text-align: center;
+    width: 33%; }
+  nav.main-nav .nav-row:last-of-type {
+    margin-top: 5px; }
+  nav.main-nav .number-todo {
+    font-size: 20px;
+    color: #2c3e50; }
+  nav.main-nav .day {
+    font-size: 22px;
+    color: #2c3e50;
+    position: relative; }
+  nav.main-nav .search-container {
+    visibility: hidden;
+    position: relative; }
+    nav.main-nav .search-container .search-bar {
+      border: 1px solid #2c3e50;
+      border-radius: 20px;
+      width: 215px;
+      margin: 0 auto;
+      height: 27px; }
+      nav.main-nav .search-container .search-bar #search-query {
+        position: relative;
+        background: transparent;
+        border: 0px;
+        outline: 0px;
+        height: 22px;
+        bottom: 2.5px; }
+      nav.main-nav .search-container .search-bar #search-btn {
+        background: transparent;
+        border: 0px;
+        outline: 0px; }
+        nav.main-nav .search-container .search-bar #search-btn .icon-search {
+          visibility: visible;
+          font-size: 22px;
+          background: transparent;
+          border: 0px; }
+    nav.main-nav .search-container .search-results {
+      position: absolute;
+      max-height: 500px;
+      overflow: hidden;
+      width: 290px;
+      border-radius: 9px;
+      left: 50%;
+      box-sizing: border-box;
+      margin-left: -145px;
+      background: rgba(196, 199, 194, 0.4); }
+      nav.main-nav .search-container .search-results .search-result {
+        padding: 10px 3px;
+        border-radius: 8px; }
+        nav.main-nav .search-container .search-results .search-result:hover {
+          background: rgba(110, 112, 114, 0.2);
+          cursor: pointer; }
+      nav.main-nav .search-container .search-results .seperator {
+        margin: 5px 0px; }
+      nav.main-nav .search-container .search-results > * {
+        white-space: pre-wrap; }
+      nav.main-nav .search-container .search-results .completed-result {
+        color: #18683D; }
+      nav.main-nav .search-container .search-results .deleted-result {
+        color: #D91E18; }
+
+div.main {
+  background: #27ae60;
+  height: 90%;
+  overflow: hidden; }
+  div.main .info-squares-right {
+    text-align: right; }
+  div.main .info-sqaures {
+    vertical-align: top;
+    margin-top: 10px;
+    display: inline-block;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 20px; }
+    div.main .info-sqaures .wiget {
+      border-radius: 13px;
+      background: #2980b9;
+      width: 159px;
+      height: 116px;
+      overflow: hidden; }
+      div.main .info-sqaures .wiget .wiget-title {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 13px; }
+      div.main .info-sqaures .wiget .wiget-info {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center; }
+  div.main .todo-list {
+    display: inline-block;
+    height: 95%;
+    background: #c6d0d4;
+    width: 33%;
+    max-width: 800px;
+    min-width: 400px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto; }
+    div.main .todo-list .list-header {
+      text-align: center; }
+      div.main .todo-list .list-header .list-title {
+        margin-top: 4px; }
+      div.main .todo-list .list-header .add-task-container {
+        margin-top: 10px;
+        border: 1px solid #2c3e50;
+        padding: 1px;
+        display: inline-block;
+        transition: border .1s linear;
+        border-radius: 20px; }
+        div.main .todo-list .list-header .add-task-container .add-task-name {
+          height: 20px;
+          background: transparent;
+          border: 0px;
+          height: 20px;
+          outline: 0px;
+          width: 83%; }
+        div.main .todo-list .list-header .add-task-container .add-task-icon {
+          cursor: pointer;
+          transition: color .2s linear; }
+          div.main .todo-list .list-header .add-task-container .add-task-icon:hover {
+            color: #959b9f; }
+    div.main .todo-list hr {
+      border: 1px solid #2c3e50;
+      margin: 25px 0px 15px 0px; }
+    div.main .todo-list ul.tasks {
+      margin: 0px auto;
+      padding: 0px;
+      width: 92%; }
+    div.main .todo-list .task {
+      height: 40px;
+      margin: 0px;
+      padding: 0px;
+      overflow: visible;
+      margin-top: 10px;
+      list-style: none;
+      border-radius: 11px;
+      background: #abb0b3;
+      font-size: 24px;
+      text-align: center;
+      position: relative;
+      transition: background .2s linear; }
+      div.main .todo-list .task .done-box {
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 32px;
+        border-radius: 10px;
+        background: #6e7072;
+        height: 32px;
+        margin-top: 4px;
+        margin-left: 6px;
+        margin-bottom: 0px;
+        text-align: center;
+        display: inline-block;
+        transition: background .2s linear; }
+        div.main .todo-list .task .done-box:hover {
+          background: #959b9f;
+          cursor: pointer !important; }
+        div.main .todo-list .task .done-box .check-icon {
+          font-size: 25px;
+          line-height: 32px;
+          color: #c6d0d4;
+          transition: background .1s linear; }
+          div.main .todo-list .task .done-box .check-icon:active {
+            color: #6e7072; }
+      div.main .todo-list .task .delete-icon {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        color: #d91e18;
+        font-size: 15px; }
+        div.main .todo-list .task .delete-icon:hover {
+          cursor: pointer; }
+      div.main .todo-list .task .task-content {
+        width: calc(100% - 40px);
+        text-align: center; }
+        div.main .todo-list .task .task-content .task-name {
+          line-height: 40px;
+          font-size: 22px;
+          display: inline-block;
+          white-space: pre-wrap;
+          word-break: break-all;
+          word-wrap: break-word;
+          margin-left: 40px; }
+
+@media (max-width: 580px) {
+  nav.main-nav {
+    height: 40px; }
+    nav.main-nav h1.nav-brand {
+      font-size: 16px;
+      margin-top: 2px;
+      padding-left: 7px;
+      margin: 0px; }
+    nav.main-nav .nav-brand, nav.main-nav .profile, nav.main-nav .mobileTodoNumber {
+      display: inline-block;
+      width: 33%;
+      float: none; }
+    nav.main-nav .mobileTodoNumber {
+      font-size: 15px; }
+    nav.main-nav .nav-brand {
+      margin-top: 0px;
+      padding-top: 2px; }
+    nav.main-nav .profile {
+      text-align: right; }
+    nav.main-nav .mobileTodoNumber {
+      text-align: center;
+      padding-top: 2px;
+      margin-top: 0px; }
+    nav.main-nav div.profile {
+      cursor: pointer; }
+      nav.main-nav div.profile h3 {
+        display: none; }
+      nav.main-nav div.profile .user-icon {
+        font-size: 18px;
+        padding-left: 3px;
+        padding-top: 2px;
+        padding-right: 5px;
+        margin: 0px; }
+      nav.main-nav div.profile .profile-dropdown {
+        display: none;
+        z-index: 20; }
+        nav.main-nav div.profile .profile-dropdown #sign-out {
+          cursor: pointer;
+          display: inline-block;
+          background: #6a7576;
+          opacity: .8;
+          border: 0px;
+          border-radius: 5px; }
+    nav.main-nav .day, nav.main-nav .search-container {
+      display: none; }
+    nav.main-nav .nav-row:last-of-type {
+      display: none; }
+    nav.main-nav .number-todo {
+      font-size: 8px;
+      color: #2c3e50; }
+
+  div.main {
+    height: 90%;
+    overflow: hidden; }
+    div.main .info-squares-left {
+      display: block; }
+    div.main .right-sqaures {
+      display: block; }
+    div.main .todo-list {
+      height: 100%;
+      background: #c6d0d4;
+      width: 100%;
+      min-width: 300px;
+      border-radius: 0px;
+      margin: 0px auto; }
+      div.main .todo-list .list-header {
+        text-align: center; }
+        div.main .todo-list .list-header .list-title {
+          margin-top: 4px; }
+        div.main .todo-list .list-header .add-task-container .add-task-name {
+          height: 20px;
+          background: transparent;
+          border: 0px;
+          height: 20px;
+          outline: 0px;
+          width: 83%; }
+      div.main .todo-list .delete-icon {
+        font-size: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

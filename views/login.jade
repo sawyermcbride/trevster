@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title Trevster: Login
+		link(rel='stylesheet', href='splash.css')
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+
+		script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+
+		meta(name='description' content='Sign up for Trevster!')
+	body 
+		h1.brand Trevster
+		h4 Login with your Username and Password
+		form(method='post' action='/login')
+			h4(class='login-error') #{error}
+			label(for='username') Username 
+			input(type='text' name='username' class='input-field' placeholder='Username')
+			label(for='password') Password
+			input(type='password' name='password' class='input-field')
+			input(type='submit' class='submit-btn' value='Login')
+			h4 No account? Sign Up
+				a(href='/join') &nbspHere.

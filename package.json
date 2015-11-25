@@ -1,0 +1,10 @@
+{
+  "name": "Trevster",
+  "author": "Sawyer McBride",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongodb":"*"
+  }
+}

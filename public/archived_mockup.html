@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trevster</title>
+		<!--Sawyer McBride, trevster.com, 2015-->
+		<meta name="description" content="The best and most fluid way to keep organized">
+		<meta charset="utf-8">
+		<meta name="viewport" content='width=device-width, inital-scale=1, user-scalable=no'>
+		
+		<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+		<script src='app.js'></script>
+		
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<!--Font Awesome-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='styles/style.css'>
+		<!--Google Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<nav class='main-nav'>
+			<div class='nav-row'>
+				<h1 class='nav-brand'>Trevster</h1>
+				<div class='profile'>
+					<span class="fa fa-user user-icon"></span><!--User icon for nav bar from font awesome-->
+					<h3 class="username">Sawyer McBride</h3>
+					<div class='profile-dropdown'>
+						<input type='button' id='sign-out' value="Sign Out">
+					</div>
+				</div>
+			</div>
+			<div class='nav-row'>
+				<h4 class='number-todo' id='number-todo'>Nothing To do </h4>
+				<h3 class='day' id='day'>Saturday August 29th</h3>
+				<div class='search-container'>
+					<div class='search-bar'>
+						<input type='text' id='search-query'/>
+						<button type='button' id='search-btn'>
+							<span class='fa fa-search icon-search'></span>
+						</button>
+					</div><!--search text field and icon-->
+					<div class='search-results'>
+						results;
+					</div>
+				</div><!--/search container-->
+			</div><!--/bottom nav row, (day, task number, search)-->
+		</nav><!--/top nav bar-->
+		
+		<div class='main'>
+		<!--	<div class='info-squares-left'>
+				Left Sqaures
+			</div>left info sqaures-->
+			<section class='todo-list'>
+				<div class='list-header'>
+					<h4 class='list-title' id='list-title'>Sawyers Tasks</h4>
+					<div class='add-task-container'>
+						<input class='add-task-name'/>
+						<span class="fa fa-plus add-task-icon"></span>
+					</div>
+				</div>
+				<hr class='todo-separator'/>
+				<ul class='tasks'>
+				<!--	<li class='task' data-taskNumber='1'>
+						<div class='done-box'>
+								<span data-taskDone="1" class='fa fa-check check-icon'></span>
+						</div>
+						<div class='task-content'>
+							<h3 class='task-name'>Visit Store</h3>
+							<h6 class='task-date'>Tuesday Oct, 19th</h6>
+						</div>
+						<span delete-taskDelete="1" class='fa fa-times-circle-o delete-icon'></span>
+					</li>-->
+				</ul>
+			</section>
+			<div class='info-squares-right'>
+				Right Sqaures
+			</div><!--/right info squares-->
+		</div><!--/main container for sqaures and list, blue background-->
+		<footer>Footer</footer>
+	</body>
+</html>

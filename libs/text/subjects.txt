@@ -1,0 +1,657 @@
+keywords:Food,Grocery,
+=
+Artichoke
+Arugula
+Asparagus
+Avocado
+Bamboo Shoots
+Bean Sprouts
+Beet
+Belgian Endive
+Bell Pepper
+Broccoli
+Brussels Sprouts
+Burdock Root/Gobo
+Cabbage
+Green, Red, Savoy
+Calabash
+Capers
+Carrot
+Cassava/Yuca
+Cauliflower
+Celery
+Celtuce
+Chayote
+Corn/Maize
+Cucumber
+English Cucumber
+Gherkin
+Pickling Cucumbers
+Daikon Radish
+Edamame
+Eggplant/Aubergine
+Elephant Garlic
+Endive
+Curly/Frisee
+Escarole
+Fennel
+Fiddlehead
+Galangal
+Garlic
+Ginger
+Grape Leaves
+Wax Beans
+Greens
+Beet Greens
+Collard Greens
+Dandelion Greens
+Kale
+Kohlrabi Greens
+Mustard Greens
+Rapini
+Spinach
+Swiss Chard
+Turnip Greens
+Hearts of Palm
+Horseradish
+Jícama
+Milk
+Kale
+Curly
+Lacinato
+Ornamental
+Kohlrabi
+Leeks
+Lemongrass
+Lettuce
+Iceberg
+Romaine
+Lotus Root
+Lotus Seed
+Napa Cabbage
+Nopales
+Okra
+Olive
+Onion
+Parsley
+Parsley Root
+Parsnip
+Peas
+green peas
+snow peas
+sugar snap peas
+Plantain
+Potato
+Pumpkin
+Purslane
+Radicchio
+Radish
+Rutabaga
+Shallots
+Spinach
+Sweet Potato
+Swiss Chard
+Taro
+Tomatillo
+Tomato
+Turnip
+Water Chestnut
+Water Spinach
+Watercress
+Winter Melon
+Yams
+Zucchini
+-----
+keywords:Resturant,
+=
+a la carte
+a la mode
+appetizer
+beef
+beverage
+bill
+bistro
+boiled
+bowl
+braised
+bread
+breakfast
+brunch
+butter
+cafe
+cafeteria
+cake
+candle
+cashier
+centerpiece
+chair
+charge
+chef
+chicken
+coffee
+cola
+cold
+condiments
+cook
+cooked
+course
+cream
+credit card
+cutlery
+deli
+delicatessen
+delicious
+dessert
+dine
+diner
+dining
+dinner
+dish
+dishwasher
+doggie bag
+dressing
+eat
+eggs
+entree
+fish
+food
+fork
+French fries
+fries
+fruit
+glass
+gourmand
+gourmet
+grilled
+hamburger
+head waiter
+high tea
+hors d'oeuvre
+hostess
+hot
+ice
+ice cubes
+iced
+ingredients
+ketchup
+kitchen
+knife
+lemonade
+lettuce
+lunch
+main course
+maitre d'
+manager
+meal
+meat
+medium
+menu
+mug
+mustard
+napkin
+noodles
+onion
+order
+party
+pasta
+pepper
+plate
+platter
+pop
+rare
+reservation
+restaurant
+roasted
+roll
+salad
+salt
+sandwich
+sauce
+saucer
+seafood
+seared
+server
+side order
+silverware
+soda
+soup
+special
+spices
+spicy
+spill
+spoon
+starters
+steak
+sugar
+supper
+table
+tablecloth
+tasty
+tax
+tea
+tip
+toast
+to go
+tomato
+utensils
+vegetables
+waiter
+waitress
+water
+-----
+keywords:Weather,
+=
+Acid rain
+Afternoon
+Noon to sunset.
+Arctic air
+Arctic high
+Top
+Ball lightning
+Barber pole
+Barometer
+Barometric pressure
+Bitterly cold
+Black ice
+Blizzard
+Blocking high
+Blowing Dust
+Blowing sand
+Blowing snow
+Blowing spray
+Blustery
+Breezy
+Brisk
+Broken clouds
+Top
+Calm
+Celsius
+Chinook
+Cirrus cloud
+Clear
+Clear slot
+Climate
+Cloudburst
+Cloudy
+Cold
+Cold front
+Cold low
+Cold-air-funnel
+Collar cloud
+Combined seas
+Condensation
+Confluence
+Convection
+Convergence
+Cumulonimbus Cloud
+Cumulus cloud
+Cumulus congestus
+Cyclone
+Day
+Sunrise to sunset.
+Debris cloud
+Dense fog
+Dew point
+Diamond dust
+Difluence
+Downburst
+Downdraft
+Downslope wind
+Draft
+Drifting snow
+Drizzle
+Drought
+Dry
+Dust storm
+Top
+Early
+El Niño
+Evening
+Extended outlook
+Top
+Fahrenheit
+Fair
+Fall wind
+Fine
+Flash flood
+Flood
+Flood crest
+Flurry
+Fog
+Fogbow
+Forecast
+Freeze
+“freeze” is defined as the change from a liquid to a solid.
+Freezing
+Freezing drizzle
+Freezing fog
+Freezing level
+Freezing rain
+Front
+Frost
+Frost point
+Fujita scale
+Fujiwhara effect
+Funnel cloud
+Top
+Gale warning
+Glaze
+Global warming
+Good visibility
+Greenhouse effect
+Ground fog
+Gust
+Gustnado
+Top
+Hail
+Haze
+Heat balance
+Heat index
+Heat island
+Heat lightning
+Heat wave
+Heavy snow
+Heavy snow warning
+Heavy surf
+High
+High cloud
+High wind warning
+High wind watch
+Hot or very warm
+Hot spot
+Humidity
+Hurricane
+Hygrometer
+Top
+Ice crystals
+Ice fog
+Ice pellets
+Ice storm
+Ice storm warning
+Indian summer
+Insolation
+Instability
+Intermittent rain
+Inversion
+Iridescence
+Isentropic lift
+Top
+Jet stream
+Top
+Katabatic
+Katafront
+Killing frost
+Knot
+Top
+La Niña
+Land breeze
+Late
+Leeward
+Left Mover
+Lifting
+Lightning
+Likely
+Low
+Low cloud
+Low-level jet
+Top
+Mainly cloudy
+Mainly sunny
+Maritime air mass
+Maximum temperature
+Mean temperature
+Medium cloud
+Meteorology
+Mild
+Minimum temperature
+Mist
+Moderate risk
+Moderate visibility
+Monsoon
+Morning
+Mountain breeze
+Muggy
+Multivortex tornado
+Mushroom
+Top
+Night, overnight
+Sunset to sunrise.
+Normal
+Top
+Offshore breeze
+Offshore forecast
+Onshore breeze
+Outflow
+Outflow winds
+Overcast
+Overrunning
+Ozone
+Ozone hole
+Top
+Partly cloudy
+Partly sunny
+Permafrost
+Polar air
+Polar front
+Polar vortex
+Poor visibility
+visibility.
+POP
+Popcorn convection
+Precipitation
+Pressure
+Pressure change
+Pressure tendency
+Prevailing wind
+Pulse storm
+Top
+“rain/no rain” and “cloudy/partly cloudy”.
+“amount” of the forecast variable is specified.
+Top
+Radar
+= Radio Detection and Ranging).
+Radiation
+Radiation fog
+Rain
+Rain gauge
+Rain showers
+Rainbow
+Relative humidity
+Return flow
+Ridge
+River flood warning
+Roll cloud
+Top
+Sandstorm
+Saturation
+Scattered
+Scud clouds
+Sea breeze
+Sea-level pressure
+Severe thunderstorm
+Shallow fog
+Shelf-cloud
+Short-fuse warning
+Shower
+Sky condition
+Sleet
+Slight chance
+Smog
+Smoke
+Snow
+Snow burst
+Snow flurries
+Snow grains
+Snow pellets
+Snow shower
+Snow squalls
+Snowfall
+Snowflake
+Spray
+Squall
+Stability
+Stable air
+Steam fog
+Storm
+Storm surge
+Storm warning
+Straight line winds
+Subtropical storm
+Sun
+Sunny
+Supercell
+Supersaturation
+Top
+Temperature
+Thunder
+Thunderstorm
+Today
+Until sunset.
+Tomorrow
+Tonight
+Sunset to midnight.
+Tornado
+Trade winds
+Tropical storm
+Turbulence
+Twister
+Typhoon
+Top
+Unstable air
+Top
+Very cool
+Very mild
+Top
+Warm
+Warm front
+Wave
+Weather
+Wind
+Wind chill
+Winter storm
+Top
+X-ray
+Xenon
+Top
+Yellow wind
+Youg
+Top
+Zonal flow
+Zonal wind
+Zulu time
+-----
+keywords:Sports,
+=
+Arizona Cardinals											
+Chicago Bears											
+Green Bay Packers											
+New York Giants											
+Detroit Lions											
+Washington Redskins											
+Philadelphia Eagles											
+Pittsburgh Steelers											
+St. Louis Rams											
+San Francisco ers											
+Cleveland Browns											
+Indianapolis Colts											
+Dallas Cowboys											
+Kansas City Chiefs											
+San Diego Chargers											
+Denver Broncos											
+New York Jets											
+New England Patriots											
+Oakland Raiders											
+Tennessee Titans											
+Buffalo Bills											
+Minnesota Vikings										
+Atlanta Falcons											
+Miami Dolphins											
+New Orleans Saints											
+Cincinnati Bengals											
+Seattle Seahawks											
+Tampa Bay Buccaneers											
+Carolina Panthers											
+Jacksonville Jaguars											
+Baltimore Ravens											
+Houston Texans
+Atlanta Braves
+Florida Marlins
+New York Mets
+Philadelphia Phillies
+Washington Nationals
+Chicago Cubs
+Cincinnati Reds
+Houston Astros
+Milwaukee Brewers
+Pittsburgh Pirates
+St. Louis Cardinals
+Arizona Diamondbacks
+Colorado Rockies
+Los Angeles Dodgers
+San Diego Padres
+San Francisco Giants
+American League
+Baltimore Orioles
+Boston Red Sox
+New York Yankees
+Tampa Bay Rays
+Toronto Blue Jays
+Chicago White Sox
+Cleveland Indians
+Detroit Tigers
+Kansas City Royals
+Minnesota Twins
+Los Angeles Angels
+Oakland Athletics
+Seattle Mariners
+Texas Rangers
+Atlanta Hawks
+Boston Celtics
+Charlotte Bobcats
+Chicago Bulls
+Cleveland Cavaliers
+Dallas Mavericks
+Denver Nuggets
+Detroit Pistons
+Golden State Warriors
+Houston Rockets
+Indiana Pacers
+LA Clippers
+LA Lakers
+Memphis Grizzlies
+Miami Heat
+Milwaukee Bucks
+Minnesota Timberwolves
+New Jersey Nets
+New Orleans Hornets
+New York Knicks
+Oklahoma City Thunder
+Orlando Magic
+Philadelphia Sixers
+Phoenix Suns
+Portland Trail Blazers
+Sacramento Kings
+San Antonio Spurs
+Toronto Raptors
+Utah Jazz
+Washington Wizards
+basketball
+Game
+Football
+Basketball
+Baseball
+Watch
+MLB
+NFL
+NBA
+
+
+
+
+
+
+
+
+
+
+

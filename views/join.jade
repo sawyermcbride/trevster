@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		title Join Trevster!
+		link(rel='stylesheet', href='splash.css')
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+
+		script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+
+		meta(name='description' content='Sign up for Trevster!')
+	body 
+		h1.brand Trevster
+		h4 Your about to experience a stunning to do list thats even smarter then it looks. 
+		div.container-fluid
+			form(method='post' action='/join')
+				div.form-group
+					h4(class='login-error' style='display:inline;') #{error}
+					if(error)
+						a(href='/login') Login Here
+					br
+					br
+					br
+					label(for='user') Username 
+					input.form-control(type='text' name='username' class='input-field' placeholder='Username')
+					label(for='password') Password
+					input.form-control(type='password' name='password' class='input-field')
+					input.form-control(type='submit' class='submit-btn' value='Join')
+				if(!error)
+					br
+					br
+					h4(style='display:inline;') Already Have an Account? Login
+					a(href='/login') &nbsp Here		

@@ -1,0 +1,67 @@
+doctype html
+html
+  head
+    title Trevster
+    // Sawyer McBride, trevster.com, 2015
+    meta(name='description', content='The best and most fluid way to keep organized')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    //For Ios web App
+    link(rel='apple-touch-icon', href='trevster-ios-logo.png')
+    script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Font Awesome
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='styles/style.css')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    script(src='main.js')
+  body
+    div.popup
+      h2#popupTaskName Task
+    nav.main-nav
+      .nav-row.above
+        h1.nav-brand Trevster
+        h3.mobileTodoNumber Nothing To do!
+        .profile
+          span.fa.fa-user.user-icon
+          // User icon for nav bar from font awesome
+          h3.username #{username}
+          .profile-dropdown
+            input#sign-out(type='button', value='Sign Out')
+      .nav-rows
+        h4#number-todo.number-todo Nothing To do!
+        h3#day.day #{date}
+        .search-container
+          .search-bar
+            input#search-query(type='text')
+            button#search-btn(type='button')
+              span.fa.fa-search.icon-search
+          // search text field and icon
+          .search-results
+    .main
+      div.info-squares-left.info-sqaures
+        div.wiget
+          h1.wiget-title #{completedTasks.length}
+          h2.wiget-info tasks completed
+      section.todo-list
+        .list-header
+          h4#list-title.list-title #{username + "\'s"+' tasks'}
+          .add-task-container
+            input.add-task-name
+            span.fa.fa-plus.add-task-icon
+        hr.todo-separator
+        ul#tasksOther
+        ul.tasks
+            each val, index in tasks
+              li.task(data-taskNumber=index+1 data-taskName=tasks[index])
+                div.done-box
+                  span.fa.fa-check.check-icon
+                div.task-content
+                  h3.task-name #{val}
+                span.fa.fa-times-circle-o.delete-icon
+      div.info-squares-right.info-sqaures
+        | Right Sqaures
+      // /right info squares
+    footer 

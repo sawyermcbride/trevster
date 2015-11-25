@@ -1,0 +1,500 @@
+$emeraldGreen: #2ecc71;
+$midnight:#2c3e50;
+$lightGrey: #c6d0d4;
+$midGrey: #abb0b3;
+$greenMain: #27ae60;
+$darkGrey: #6e7072;
+$userNameGrey: #6a7576;
+$blue: #22a7f0;
+$darkBlue:#2980b9;
+$textBlue: #2c3e50;
+$lighterGrey:#959b9f;
+$warn:#f1c40f;
+//responsive design variables
+$iPhone:580px;
+$tablet:790px;
+*{
+	font-family: 'Open Sans';
+}
+body,html{
+	width: 100%;
+	height:100%;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+}
+//clear fix
+
+@mixin clear-fix(){
+	&:after{
+		content: " ";
+		display: block;
+		clear: both;
+	}
+}
+
+.popup{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-75%);
+  margin: 0 auto;
+  width:300px;
+  height:120px;
+  background:rgba(44,62,90,.9);
+  border-radius: 9px;
+  z-index: 100;
+  visibility: hidden;
+  #popupTaskName{
+	text-align: center;
+	color:#ecf0f1;
+  }
+}
+//nav bar
+nav.main-nav{
+	background:$emeraldGreen;
+	height: 70px;
+	margin-top: 0px;
+	overflow: visible;
+	h1.nav-brand{
+		font-size: 24px;
+		margin-top:2px;
+		margin-left:7px;
+		float: left;
+	}
+	.mobileTodoNumber{
+		display: none;
+	}
+	.nav-row{
+		@include clear-fix();
+	}
+    div.nav-row:first-of-type{
+	  position: relative;
+	  z-index: 5;
+	}
+	//user 
+	div.profile {
+		float: right;
+		cursor: pointer;
+		h3{
+			font-size: 14px;
+			color: $darkGrey;
+			display: inline-block;
+			margin: 5px 5px 0px 4px;
+		}
+		//font awesome
+		.user-icon{
+			font-size: 18px;
+			color:$midnight;
+			cursor: pointer;
+		}
+		.profile-dropdown{
+		  	visibility: hidden;
+		  	position: absolute;
+			right: 2.5%;
+			cursor: pointer;
+			#sign-out{
+				cursor: pointer;
+				padding: 2px 12px;
+				display: inline-block;
+				margin-top: 5px;
+				background: $userNameGrey;
+				opacity: .8;
+				border: 0px;
+				border-radius: 5px;
+			}
+		}
+	}
+	.number-todo,.day,.search-container{
+		display:inline-block;
+		text-align: center;
+		width: 33%;
+	}
+	.nav-row:last-of-type{
+		margin-top:5px;
+	}
+	.number-todo{
+		font-size: 20px;
+		color: $midnight;
+	}
+	.day{
+		font-size: 22px;
+		color:$midnight;
+		position: relative;
+	}
+	.search-container{
+		visibility: hidden;
+		position: relative;
+		.search-bar{
+			border:1px solid $midnight;
+			border-radius: 20px;
+			width: 215px;
+			margin:0 auto;
+			height: 27px;
+			#search-query{
+				position: relative;
+				background: transparent;
+				border:0px;
+				outline:0px;
+				height: 22px;
+				bottom:2.5px;
+			}
+			#search-btn{
+				background: transparent;
+				border:0px;
+				outline:0px;
+				.icon-search{
+					visibility: visible;
+					font-size: 22px;
+					background: transparent;
+					border:0px;
+				}
+			}
+		}
+		.search-results{
+			position: absolute;
+			max-height: 500px;
+			overflow: hidden;
+			width: 290px;
+			border-radius: 9px;
+			left:50%;
+			box-sizing: border-box;
+			margin-left: -145px;
+			background: rgba(196,199,194,0.4);
+			.search-result{
+			  padding:10px 3px;
+			  border-radius: 8px;
+			  &:hover{
+				background: rgba(110,112,114,.2);
+				cursor: pointer;
+			  }
+			}
+			.seperator{
+				margin:5px 0px;
+			}
+			&>*{
+				white-space:pre-wrap;
+			}
+			.completed-result{
+				color: #18683D;
+			}
+			.deleted-result{
+				color: #D91E18;
+			}
+		}
+	}
+}
+
+div.main{
+	background: $greenMain;
+	height: 90%;
+	overflow: hidden;
+	.info-squares-left{
+
+	}
+	.info-squares-right{
+		text-align: right;
+	}
+	.info-sqaures{
+		vertical-align: top;
+		margin-top: 10px;
+		display: inline-block;
+		width: 33%;
+		box-sizing: border-box;
+		padding: 20px;
+		.wiget{
+			border-radius: 13px;
+			background: #2980b9;
+			width: 159px;
+			height:116px;
+			overflow: hidden;
+			.wiget-title{
+				font-size: 40px;
+				text-align: center;
+				margin-top: 13px;
+			}
+			.wiget-info{
+				font-size: 18px;
+				margin-top: 10px;
+				text-align: center;
+			}
+		}
+	}
+	.todo-list{
+		display: inline-block;
+		height: 95%;
+		background: $lightGrey;
+		width: 33%;
+		max-width: 800px;
+		min-width: 400px;
+		border-radius: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		overflow: auto;
+		.list-header{
+			text-align: center;
+			.list-title{
+				margin-top: 4px;
+			}
+			.add-task-container{
+				margin-top: 10px;
+				border: 1px solid $midnight;
+				padding: 1px;
+				display: inline-block;
+				transition: border .1s linear;
+				border-radius: 20px;
+				.add-task-name{
+					height:20px;
+					background: transparent;
+					border:0px;
+					height:20px;
+					outline:0px;
+					width:83%;
+				}
+				.add-task-icon{
+					cursor: pointer;
+					transition: color .2s linear;
+					&:hover{
+						color:$lighterGrey;
+					}
+				}
+			}//add task container
+		}//list header
+		hr{
+			border:1px solid $midnight;
+			margin: 25px 0px 15px 0px;
+		}
+		ul.tasks{
+			margin: 0px auto;
+			padding: 0px;
+			width: 92%;
+		}
+		.task{
+			height:40px;
+			margin: 0px;
+			padding: 0px;
+			overflow: visible;
+			margin-top: 10px;
+			list-style: none;
+			border-radius: 11px;
+			background: $midGrey;
+			font-size: 24px;
+			text-align: center;
+			position: relative;
+			transition: background .2s linear;
+			.done-box{
+				cursor: pointer;
+				position: absolute;
+				top:0px;
+				left: 0px;
+				width:32px;
+				border-radius: 10px;
+				background: $darkGrey;
+				height:32px;
+				margin-top: 4px;
+				margin-left: 6px;
+				margin-bottom: 0px;
+				text-align: center;
+				display: inline-block;
+				transition: background .2s linear;
+				&:hover{
+					background:$lighterGrey;
+					cursor: pointer !important;
+				}
+				.check-icon{
+					font-size: 25px;
+					line-height: 32px;
+					color: $lightGrey;
+					transition: background .1s linear;
+					&:active{
+						color: $darkGrey;
+					}
+				}
+			}//done-box
+			.delete-icon{
+				position: absolute;
+				top:2px;
+				right:2px;
+				color: #d91e18;
+				font-size: 15px;
+				&:hover{
+					cursor:pointer;
+				}
+			}
+		 .task-content{
+			 	width: calc(100% - 40px);
+			 	text-align: center;
+			 .task-name{
+				 line-height: 40px;
+				 font-size: 22px;
+				 display: inline-block;
+			   	 white-space: pre-wrap;
+			   	 word-break: break-all;
+				 word-wrap: break-word;
+			   	 margin-left:40px;
+			}
+		 }
+		}
+	}//todo list
+}//main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Responsive Design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//iPhone
+@media (max-width:$iPhone){
+nav.main-nav{
+	height: 40px;
+	h1.nav-brand{
+		font-size: 16px;
+		margin-top:2px;
+		padding-left:7px;
+		margin: 0px;
+	}
+	//line number todo, account icon and brand inline
+	.nav-brand,.profile,.mobileTodoNumber{
+		display: inline-block;
+		width: 33%;
+		float: none;
+	}
+	.mobileTodoNumber{
+		font-size: 15px;
+	}
+	.nav-brand{
+		margin-top: 0px;
+		padding-top: 2px;
+	}
+	.profile{
+		text-align: right;
+	}
+	.mobileTodoNumber{
+		text-align: center;
+		padding-top: 2px;
+		margin-top: 0px;
+	}
+	//user 
+	div.profile {
+		cursor: pointer;
+		h3{
+			display: none;
+		}
+		//font awesome
+		.user-icon{
+			font-size: 18px;
+			padding-left: 3px;
+			padding-top: 2px;
+			padding-right: 5px;
+			margin: 0px;
+		}
+		.profile-dropdown{
+			display: none;
+			z-index: 20;
+			#sign-out{
+			  cursor: pointer;
+			  display: inline-block;
+			  background: $userNameGrey;
+			  opacity: .8;
+			  border: 0px;
+			  border-radius: 5px;
+			}
+		}
+	}
+	.day,.search-container{
+		display: none;
+	}
+	.nav-row:last-of-type{
+		display: none;
+	}
+	.number-todo{
+		font-size: 8px;
+		color: $midnight;
+	}
+}//nav
+	
+	
+	//LIST
+	
+	
+div.main{
+	height: 90%;
+	overflow: hidden;
+	.info-squares-left{
+		display: block
+	}
+	.right-sqaures{
+		display: block;
+	}
+	.todo-list{
+		height: 100%;
+		background: $lightGrey;
+		width: 100%;
+		min-width: 300px;
+		border-radius: 0px;
+		margin: 0px auto;
+		.list-header{
+			text-align: center;
+			.list-title{
+				margin-top: 4px;
+			}
+			.add-task-container{
+				.add-task-name{
+					height:20px;
+					background: transparent;
+					border:0px;
+					height:20px;
+					outline:0px;
+					width:83%;
+				}
+			}//add task container
+		}//list header
+		.delete-icon{
+			font-size: 20px;
+		}
+	}//todo list	
+}
+}//media 
+//dynamic add on classes
+
